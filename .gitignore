@@ -1,0 +1,14 @@
+/.venv
+/conda_env
+/license_plate_and_car_detection/model_pi/pi_1/run/__pycache__
+
+/dataset
+/dataset_7
+/video
+/img_for_test
+/models
+/best.pt
+/yolo11n.pt
+/yolo26n.pt
+/__pycache__
+/run
