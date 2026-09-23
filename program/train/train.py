@@ -10,13 +10,20 @@ def main():
     model = YOLO("yolo11n.pt")
 
     results = model.train(
-        data=r"D:\license_plate_and_car_detection\dataset\dataset_6\data.yaml",
+        data=r"D:\license_plate_and_car_detection\LicensePlateProvince_D.v4i\data.yaml",
         epochs=100,
-        imgsz=640,
-        batch=8,
+        imgsz=320,
+        batch=24,
+
         device=0,
         workers=8,
+        project="YOLO",
+        name="License_Province3_320",
+        exist_ok=True,
+        save=True,
     )
 
 if __name__ == "__main__":
     main()
+    
+    
