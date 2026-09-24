@@ -16,7 +16,7 @@ import csv
 # ============================================================
 
 YOLO2_MODEL_PATH = (
-    r"D:\license_plate_and_car_detection\License_Province3_320\weights\best.pt"
+    r"D:\license_plate_and_car_detection\model_yolo\license_version_4_320\best.pt"
 )
 
 YOLO2_IMG_SIZE = 320
@@ -64,7 +64,7 @@ yolo2 = YOLO(
 
 ocr = TextRecognition(
     model_name="th_PP-OCRv5_mobile_rec",
-    model_dir=r"D:\license_plate_and_car_detection\inference_final_1\th_plate_rec"
+    model_dir=r"D:\license_plate_and_car_detection\th_plate_rec_1"
 )
 
 
@@ -237,7 +237,7 @@ _PLATE_KEEP = (
 # ============================================================
 
 PLATE_PATTERN = re.compile(
-    r'^[0-9]?[ก-ฮ]{1,3}[0-9]{1,4}$'
+    r'^[0-9]{0,1}[\u0E01-\u0E4E]{1,10}[0-9]{1,4}$' # r'^[0-9]?[ก-ฮ]{1,3}[0-9]{1,4}$'
 )
 
 # อัพเดทจาก ocr_new.py: น้ำหนักที่เหลือของสตริงที่ผิดฟอร์แมตตอนโหวต (plate_vote)
