@@ -64,7 +64,7 @@ yolo2 = YOLO(
 
 ocr = TextRecognition(
     model_name="th_PP-OCRv5_mobile_rec",
-    model_dir=r"D:\license_plate_and_car_detection\th_plate_rec_1"
+    model_dir=r"D:\license_plate_and_car_detection\final_model_ocr\th_plate_rec"
 )
 
 
@@ -169,7 +169,7 @@ THAI_MAP = {
 }
 
 # ไทย -> ไทย ใช้เฉพาะซ่อมโซนตัวอักษรของเลขทะเบียน ห้ามใช้กับ clean_province_text
-PLATE_ONLY_MAP = {"า": "ว", "ฤ": "ฎ"}
+PLATE_ONLY_MAP = {"า": "ว", "ฤ": "ฎ","ฏ": "ฎ"}
 
 
 DIGIT_MAP = {
@@ -237,7 +237,7 @@ _PLATE_KEEP = (
 # ============================================================
 
 PLATE_PATTERN = re.compile(
-    r'^[0-9]{0,1}[\u0E01-\u0E4E]{1,10}[0-9]{1,4}$' # r'^[0-9]?[ก-ฮ]{1,3}[0-9]{1,4}$'
+    r'^[0-9]?[ก-ฮ]{1,3}[0-9]{1,4}$' # r'^[0-9]?[ก-ฮ]{1,3}[0-9]{1,4}$'
 )
 
 # อัพเดทจาก ocr_new.py: น้ำหนักที่เหลือของสตริงที่ผิดฟอร์แมตตอนโหวต (plate_vote)

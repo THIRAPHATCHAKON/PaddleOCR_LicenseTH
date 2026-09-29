@@ -2,9 +2,9 @@ import cv2
 from pathlib import Path
 from ultralytics import YOLO
 
-MODEL_PATH = r""   # Model path
-IMG_DIR = r""      # Input image directory
-OUTPUT_DIR = r""   # Output crop directory
+MODEL_PATH = r"D:\license_plate_and_car_detection\model_yolo\Final_Detect_640\final_640.pt"   # Model path
+IMG_DIR = r"D:\license_plate_and_car_detection\test_2"      # Input image directory
+OUTPUT_DIR = r"crop_plate_testset_1"   # Output crop directory
 
 PLATE_CONF = 0.50
 IMGSZ = 640

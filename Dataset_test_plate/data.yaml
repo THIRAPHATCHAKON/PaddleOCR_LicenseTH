@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['number', 'province']
+
+roboflow:
+  workspace: code-tech
+  project: dataset_test_plate
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/code-tech/dataset_test_plate/dataset/1

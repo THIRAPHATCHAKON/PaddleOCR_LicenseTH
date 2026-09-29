@@ -1,7 +1,7 @@
 import os
 
 #Path Input
-folder_path = r""
+folder_path = r"D:\license_plate_and_car_detection\evaluation_ocr_1\plate_2"
 
 files = [
     f for f in os.listdir(folder_path)

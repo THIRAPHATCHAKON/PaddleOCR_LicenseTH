@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['license-plate']
+
+roboflow:
+  workspace: test-workspace-frspv
+  project: car-with-plate
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/test-workspace-frspv/car-with-plate/dataset/1
